@@ -7,39 +7,36 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
 
-  <body class="flex h-screen items-center justify-center bg-[#3f3f46]">
-    <div class="max-w-md rounded-xl bg-[#202023] md:max-w-4xl">
-      <div class="md:flex">
-        <div class="m-5 md:m-3 md:shrink-0">
-          <img
-            src="https://ouzezhhwdfmxhjolopgr.supabase.co/storage/v1/object/public/learning/tailwind-101/1.jpg"
-            alt="logo"
-            class="h-full w-full rounded-xl bg-slate-500 md:h-96 md:w-full md:rounded-l-xl md:rounded-r-none"
+  <body class="flex h-screen items-center justify-center bg-zinc-700">
+    <div
+      class="flex max-w-xs flex-col rounded-xl bg-zinc-800 p-2 pb-5 md:max-w-xl md:flex-row md:pb-2"
+    >
+      <img
+        src="https://ouzezhhwdfmxhjolopgr.supabase.co/storage/v1/object/public/learning/tailwind-101/1.jpg"
+        alt="logo"
+        class="h-80 rounded-xl md:h-64 md:rounded-r-none"
+      />
+      <div class="p-8 text-center text-white md:pt-10">
+        <h3 class="pb-5 text-xl md:text-left">
+          Get diet and fifness tips in your inbox
+        </h3>
+        <div class="pb-5 text-xs md:pr-10 md:text-left">
+          Eat better and exercise better. Sign up for the Diet&Fitness
+          newsletter.
+        </div>
+        <form class="flex flex-col gap-4 md:flex-row">
+          <input
+            class="w-full border border-zinc-700 bg-zinc-800 p-2 text-center placeholder:text-xs focus:outline-double focus:outline-zinc-400 md:my-0 md:pl-4 md:text-left"
+            type="email"
+            placeholder="Enter Your Email Address"
           />
-        </div>
-        <div class="m-10 text-center align-middle text-white md:m-20 md:ml-16">
-          <p class="mb-10 text-3xl md:text-left">
-            Get diet and fifness tips in your inbox
-          </p>
-          <p class="text-l md:text-left">
-            Eat better and exercise better. Sign up for the Diet&Fitness
-            newsletter.
-          </p>
-
-          <div class="m-5 md:flex md:flex-row">
-            <input
-              class="my-5 h-10 w-full border border-white bg-[#202023] p-7 text-center md:my-0"
-              type="email"
-              placeholder="Enter Your Email Address"
-            />
-            <button
-              class="h-12 w-full rounded-xl bg-[#84cc16] text-lg text-black hover:bg-[#4d7c0f] hover:text-white md:w-10"
-              type="submit"
-            >
-              Subcribe
-            </button>
-          </div>
-        </div>
+          <button
+            class="w-full rounded-xl bg-lime-600 px-5 py-3 text-xs text-black duration-500 hover:bg-lime-700 hover:text-white md:w-auto"
+            type="submit"
+          >
+            Subcribe
+          </button>
+        </form>
       </div>
     </div>
   </body>
